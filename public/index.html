@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter Password</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <h1>Enter your password</h1>
+        <div class="acc">
+          <img src="./userIcon.png" alt="" />
+          <div class="acc-text">
+            <p>Business Account</p>
+            <h4>Sarah Bills</h4>
+          </div>
+        </div>
+      </div>
+
+      <form action="/login" method="post" class="pass-input">
+        <label for="pass">Password</label>
+        <div class="box">
+          <input
+            type="password"
+            name="password"
+            id="pass"
+            placeholder="Enter Password"
+          />
+          <img src="./eye-icon.png" alt="" />
+        </div>
+
+        <div class="bottom">
+          <div class="left">
+            <div class="slide">
+              <input type="checkbox" id="check" /><label
+                for="check"
+                class="circle"
+              ></label>
+            </div>
+            <p>Stay signed in</p>
+          </div>
+
+          <button type="submit" class="continue-btn">Continue</button>
+        </div>
+      </form>
+
+      <h3 class="reset">Reset password</h3>
+    </div>
+    <script src="./idnex.js"></script>
+  </body>
+</html>
